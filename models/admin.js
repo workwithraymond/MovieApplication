@@ -1,5 +1,5 @@
 const mongoose = require("mongoose"),
-	passportLocalMongoose=require("passport-local-mongoose");
+	passportLocalMongoose = require("passport-local-mongoose");
 
 	const adminSchema = mongoose.Schema(
 	{
@@ -9,4 +9,4 @@ const mongoose = require("mongoose"),
 	});
 
 	adminSchema.plugin(passportLocalMongoose);
-	module.exports=mongoose.model("Admin" , adminSchema);
+	module.exports = mongoose.model("Admin" , adminSchema);
